@@ -90,7 +90,7 @@ function Contact() {
                 </div>
               </div>
               <p className="text-center lg:text-start text-sm lg:text-xl italic font-light">
-                // for some reasons I just share email id, you can mail me!
+                // for some reasons, I just share email id, you can mail me!
               </p>
             </motion.div>
             <motion.div
