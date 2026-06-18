@@ -17,7 +17,7 @@ function Contact() {
     };
 
     try {
-      const res = await fetch("https://portfolio-backend-fx66.onrender.com/api/contact", {
+      const res = await fetch("https://portfolio-backend-fx66.onrender.com/contact", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
