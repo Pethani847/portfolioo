@@ -25,8 +25,6 @@ app.get('/', (req, res) => {
     res.send('hellow');
 });
 
-console.log(process.env.MONGO_URI);
-
 const port = process.env.PORT;
 
 app.post("/contact", async (req, res) => {
