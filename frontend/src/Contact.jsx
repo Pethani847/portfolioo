@@ -17,18 +17,20 @@ function Contact() {
     };
 
     try {
-      const res = await fetch("https://portfolio-backend-fx66.onrender.com/contact", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
+      const res = await fetch(
+        "https://portfolio-backend-fx66.onrender.com/contact",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(data),
         },
-        body: JSON.stringify(data),
-      });
+      );
 
       const result = await res.json();
       if (result.success) {
-        alert("Message sent successfully!");
-
+        setMessage("✅ Message sent successfully!");
         setName("");
         setEmail("");
         setRemark("");
@@ -129,6 +131,7 @@ function Contact() {
                   </button>
                 </div>
               </form>
+              {message && <p className="text-pgreen mt-2">{message}</p>}
             </motion.div>
           </div>
         </main>
