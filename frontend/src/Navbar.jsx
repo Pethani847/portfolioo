@@ -15,7 +15,7 @@ function Navbar() {
 
   return (
     <>
-      <nav className="flex justify-between items-center bg-bg w-full px-8 py-4  sticky top-0 z-50 border-b">
+      <nav className="flex justify-between items-center bg-bg w-full px-8 h-10 lg:h-20 sticky top-0 z-50 border-b">
         <div className="text-pyellow font-bold text-xl lg:text-3xl">PM</div>
         <div className="flex mr-3 lg:mr-5">
           <div className="hidden md:flex ">
@@ -37,7 +37,8 @@ function Navbar() {
               </a>
             ))}
           </div>
-          <div className="md:hidden">
+          </div>
+          <div className=" md:hidden">
             <div onClick={toggleMenu} className="cursor-pointer text-2xl">
               {menuOpen ? (
                 
@@ -46,7 +47,6 @@ function Navbar() {
                <i className="fa-solid fa-burger"></i>
               )}
             </div>
-          </div>
         </div>
       </nav>
       {menuOpen && (

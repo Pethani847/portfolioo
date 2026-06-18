@@ -10,7 +10,7 @@ function Education() {
 
     return (  
         <>
-        <section className="px-8 py-4">
+        <section className="px-8 py-4 ">
             <main className='flex flex-col justify-center items-center lg:items-start min-h-screen' id='education'>
                  <div className="w-full mb-5  lg:mb-10 flex flex-col gap-3 items-center lg:flex-row">
               <p className="text-xl font-medium">03 | EDUCATION</p>

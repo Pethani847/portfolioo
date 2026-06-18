@@ -25,10 +25,10 @@ function Experience() {
           id="experience"
         >
           <div className="w-full  mb-5 lg:mb-10  flex flex-col gap-3 items-center lg:flex-row">
-            <p className="text-xlfont-medium">03 | EXPERIENCE</p>
+            <p className="text-xlfont-medium">06 | EXPERIENCE</p>
             <div className="w-full lg:flex-1 h-[1px] bg-fg"></div>
           </div>
-          <div className="flex flex-col items-center lg:items-start w-full">
+          <div className="flex flex-col text-center justify-center items-center lg:items-start w-full">
             <h1 className="text-4xl lg:text-5xl mb-2 font-bold tracking-wide">
               Where I've worked.
             </h1>

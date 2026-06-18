@@ -49,7 +49,7 @@ function Contact() {
           id="contact"
         >
           <div className="w-full  mb-1 lg:mb-4 flex flex-col gap-3 items-center lg:flex-row">
-            <p className="text-xlfont-medium">08 | CONTACT</p>
+            <p className="text-xlfont-medium">07 | CONTACT</p>
             <div className="w-full lg:flex-1 h-[1px] bg-fg"></div>
           </div>
           <div className="flex flex-col justify-center  items-center lg:flex-row my-2 lg:my-4 w-full">
