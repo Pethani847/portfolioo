@@ -13,10 +13,10 @@ function About() {
 
   return (
     <>
-      <section className="px-8 py-4 ">
+      <section className="px-10 lg:px-20 py-4 ">
         <main className="flex flex-col justify-center items-center min-h-screen gap-4" id="about">
           <div className="w-full flex flex-col gap-3 mb-2 items-center lg:flex-row">
-          <p className="text-xl font-medium" >01 | ABOUT</p>
+          <p className="text-base lg:text-xl font-medium" >01 | ABOUT</p>
           <div className="w-full lg:flex-1 h-[1px] bg-fg"></div>
           </div>
           <div className="flex flex-col justify-center items-center  lg:flex-row my-2 lg:my-4 w-full">
@@ -26,21 +26,21 @@ function About() {
               transition={{ duration: 1 }}
               viewport={{ once: true, amount: 0.2 }}
             >
-              <h1 className="text-4xl lg:text-5xl mb-1 font-bold tracking-wide " >Nice to meet youh!, I'm Madhvi...</h1>
-              <p className="text-base lg:text-xl italic font-light mb-4 lg:mb-10">// the human behind the code! </p>
-              <h3 className="text-sm lg:text-2xl mb-2 lg:mb-5 lg:leading-8 w-full lg:tracking-wide">
+              <h1 className="text-3xl lg:text-5xl mb-1 font-bold tracking-wide " >Nice to meet youh!, I'm Madhvi...</h1>
+              <p className="text-sm lg:text-xl italic font-light mb-4 lg:mb-10">// the human behind the code! </p>
+              <h3 className="text-base lg:text-2xl mb-2 lg:mb-5 lg:leading-8 w-full lg:tracking-wide">
                 A BSc IT graduate from Swarnim University, Surat — currently
                 finding my footing in the world of full-stack web development.
                 I'm a fresher in this field, but what I lack in experience I
                 make up for in hunger to learn. Give me a challenge and I'll
                 figure it out. Give me time and I'll master it.
               </h3>
-              <h4 className="text-sm lg:text-2xl mb-8 lg:mb-16 lg:leading-8 lg:tracking-wide">
+              <h4 className="text-base lg:text-2xl mb-8 lg:mb-16 lg:leading-8 lg:tracking-wide">
                 My goal is simple — get really good at MERN stack first, then
                 pursue a Master's with a focus on Cybersecurity. Two fields, one
                 mindset: keep learning, keep growing, no ceiling.
               </h4>
-              <p className='text-base lg:text-xl italic font-light mb-5 lg:mb-10'>-------Scrolll!</p>
+              <p className='text-sm lg:text-xl italic font-light mb-5 lg:mb-10'>-------Scrolll!</p>
             </motion.div>
             <motion.div className="flex flex-row flex-wrap justify-center items-center lg:flex-col w-full gap-2 lg:gap-6"
             initial={{ opacity: 0, x: 50 }}
@@ -53,7 +53,7 @@ function About() {
                  initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeInOut", delay: index * 0.25 } }}
                   whileHover={{scale: 1.01, transition: {duration: 0.2}}}
-                  viewport={{ once: false, amount: 0.5 }}
+                  viewport={{ once: false, amount: 0.3 }}
                 >
                   <div className="text-lg lg:text-2xl lg:mr-2">
                     <i className={fact.icon}></i>

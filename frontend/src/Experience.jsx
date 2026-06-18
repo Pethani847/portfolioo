@@ -19,20 +19,20 @@ function Experience() {
 
   return (
     <>
-      <section className="px-8 py-4">
+      <section className="px-10 lg:px-20 py-4">
         <main
           className="min-h-screen  flex flex-col justify-center items-center lg:items-start"
           id="experience"
         >
           <div className="w-full  mb-5 lg:mb-10  flex flex-col gap-3 items-center lg:flex-row">
-            <p className="text-xlfont-medium">06 | EXPERIENCE</p>
+            <p className="text-base lg:text-xl font-medium">06 | EXPERIENCE</p>
             <div className="w-full lg:flex-1 h-[1px] bg-fg"></div>
           </div>
           <div className="flex flex-col text-center justify-center items-center lg:items-start w-full">
-            <h1 className="text-4xl lg:text-5xl mb-2 font-bold tracking-wide">
+            <h1 className="text-3xl lg:text-5xl mb-2 font-bold tracking-wide">
               Where I've worked.
             </h1>
-            <p className="text-base lg:text-xl italic font-light mb-4 lg:mb-10 ">
+            <p className="text-sm lg:text-xl italic font-light mb-4 lg:mb-10 ">
               // real world experience before the code world!
             </p>
             <p className="text-sm lg:text-xl text-center lg:text-start mb-8 lg:mb-10">
@@ -50,16 +50,16 @@ function Experience() {
                   whileHover={{scale: 1.01, transition: {duration: 0.2}}}
                   viewport={{ once: false, amount: 0.5 }}
                 >
-                  <div className="flex justify-between mb-1 lg:mb-2">
-                    <h2 className="text-2xl lg:text-3xl text-pyellow font-semibold ">
+                  <div className="flex justify-between items-center mb-1 lg:mb-2">
+                    <h2 className="text-xl lg:text-3xl text-pyellow font-semibold ">
                       {experience.role}
                     </h2>
-                    <span className="font-light">{experience.year}</span>
+                    <span className="text-sm lg:text-base font-light">{experience.year}</span>
                   </div>
-                  <h4 className="text-base lg:text-xl mb-4 lg:mb-6">
+                  <h4 className="text-base text-start lg:text-xl mb-4 lg:mb-6">
                     {experience.company}
                   </h4>
-                  <p className="text-xl font-light lg:w-[65%]">
+                  <p className="text-lg text-start font-light lg:w-[65%]">
                     {experience.des}
                   </p>
                 </motion.div>

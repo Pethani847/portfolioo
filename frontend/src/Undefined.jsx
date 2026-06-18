@@ -42,10 +42,10 @@ function Undefined() {
 
   return (
     <>
-      <section className="px-8 py-4">
+      <section className="px-10 lg:px-20 py-4">
         <main className="flex flex-col items-center justify-center min-h-screen ">
           <div className="w-full flex flex-col gap-3 items-center lg:flex-row"></div>
-          <p className="text-xl my-2 ms:my-4 font-medium">02 | PHILOSOPHY</p>
+          <p className="text-base lg:text-xl my-2 ms:my-4 font-medium">02 | PHILOSOPHY</p>
           <motion.div
             className="flex flex-col items-center text-center"
             variants={containerVariants}
@@ -54,13 +54,13 @@ function Undefined() {
             viewport={{ once: true }}
           >
             <motion.h1
-              className="text-4xl md:text-6xl lg:text-9xl mb-4 md:mb-8 font-bold tracking-wide"
+              className="text-3xl md:text-6xl lg:text-9xl mb-4 md:mb-8 font-bold tracking-wide"
               variants={itemVariants}
             >
               UNDEFINED
             </motion.h1>
             <motion.p
-              className="text-xl lg:text-2xl w-full mb-1 md:mb-2 lg:mb-4"
+              className="text-base lg:text-2xl w-full mb-1 md:mb-2 lg:mb-4"
               variants={itemVariants}
             >
               "Undefined" is not an error -- it's my belief. I refuse to set
@@ -69,7 +69,7 @@ function Undefined() {
               next chapter!.
             </motion.p>
             <motion.p
-              className="text-base lg:text-xl italic font-light mb-6 lg:mb-8"
+              className="text-sm lg:text-xl italic font-light mb-6 lg:mb-8"
               variants={itemVariants}
             >
               // this belief shapes my path!
@@ -81,7 +81,7 @@ function Undefined() {
               {labels.map((label) => (
                 <div
                   key={label}
-                  className="bg-bg2 hover:text-pyellow transition-all duration-150 hover:-translate-1 border-1 rounded-xl text-base md:text-xl px-2 py-1 lg:px-4 lg:py-2 "
+                  className="bg-bg2 hover:text-pyellow transition-all duration-150 hover:-translate-1 border-1 rounded-xl text-sm lg:text-xl px-2 py-1 lg:px-4 lg:py-2 "
                 >
                   {label}
                 </div>
@@ -96,13 +96,13 @@ function Undefined() {
                   key={def.name}
                   className="flex flex-col items-center gap-3"
                 >
-                  <i className={def.icon}></i>
-                  <span>{def.name}</span>
+                  <i className={`${def.icon} text-sm lg:text-base`}></i>
+                  <span className="text-sm lg:text-base">{def.name}</span>
                 </div>
               ))}
             </motion.div>
           </motion.div>
-          <p className="text-base lg:text-xl italic font-light ">
+          <p className="text-sm lg:text-xl italic font-light ">
             -------Scrolll!
           </p>
         </main>

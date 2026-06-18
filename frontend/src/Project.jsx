@@ -68,23 +68,23 @@ function Project() {
 
   return (
     <>
-      <section className="px-8 py-4">
+      <section className="px-10 lg:px-20 py-4">
         <main
           className="min-h-screen flex flex-col justify-center items-center"
           id="project"
         >
           <div className="w-full mb-1 lg:mb-4 flex flex-col gap-3 items-center lg:flex-row">
-            <p className="text-xl font-medium ">05 | PROJECTS</p>
+            <p className="text-base lg:text-xl font-medium ">05 | PROJECTS</p>
             <div className="w-full lg:flex-1 h-[1px] bg-fg"></div>
           </div>
           <div className="flex flex-col text-center lg:text-start items-center lg:items-start w-full mb-4">
-            <h1 className="text-4xl  lg:text-5xl mb-2 font-bold tracking-wide">
+            <h1 className="text-3xl  lg:text-5xl mb-2 font-bold tracking-wide">
               Things I'm building.
             </h1>
-            <p className="text-base lg:text-xl italic font-light mb-4 lg:mb-6">
+            <p className="text-sm lg:text-xl italic font-light mb-4 lg:mb-6">
               // no projects yet to show you -- but just watch this space!
             </p>
-            <p className="text-lg text-center lg:text-start lg:text-2xl">
+            <p className="text-base text-center lg:text-start lg:text-2xl">
               I haven't shipped a full project yet -- and i'm not going to
               pretend otherwise. What I have is solid understanding a growing
               skillset, and a pipeline of projects i'm actively planning.
@@ -117,9 +117,9 @@ function Project() {
                   viewport={{ once: false, amount: 0.3 }}
                 >
                   <div className="flex justify-between font-light mb-2 lg:mb-3">
-                    <div className="text-base lg:text-xl">{project.num}</div>
+                    <div className="text-sm lg:text-xl">{project.num}</div>
                     <div
-                      className={`${project.color} border-1 text-sm lg:text-base border-solid rounded-xl p-1`}
+                      className={`${project.color} border-1 text-xs lg:text-base border-solid rounded-xl p-1`}
                     >
                       {project.status}
                     </div>
@@ -158,8 +158,8 @@ function Project() {
               viewport={{ once: false, amount: 0.3 }}
             >
               <div className="flex justify-between font-light  mb-2 lg:mb-3">
-                <div className="text-base lg:text-xl">{pro3.num}</div>
-                <div className="text-pblue border-1 border-solid text-sm lg:text-base rounded-xl p-1">
+                <div className="text-sm lg:text-xl">{pro3.num}</div>
+                <div className="text-pblue border-1 border-solid text-xs lg:text-base rounded-xl p-1">
                   {pro3.status}
                 </div>
               </div>
@@ -175,13 +175,13 @@ function Project() {
                     key={detail.title}
                     className="text-center border-pblue bg-bg3 p-1 lg:p-3 rounded-2xl border-1 w-full transition-all duration-300 hover:-translate-2"
                   >
-                    <div className="text-xl lg:text-2xl mb-2">
+                    <div className="text-lg lg:text-2xl mb-2">
                       <i className={detail.icon}></i>
                     </div>
-                    <h4 className=" text-pyellow text-lg lg:text-xl mb-1">
+                    <h4 className=" text-pyellow text-base lg:text-xl mb-1">
                       {detail.title}
                     </h4>
-                    <p className="text-xs lg:text-base font-light">
+                    <p className="text-sm lg:text-base font-light">
                       {detail.des}
                     </p>
                   </div>

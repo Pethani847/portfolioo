@@ -102,23 +102,23 @@ function Skills() {
 
   return (
     <>
-      <section className="px-8 py-4">
+      <section className="px-10 lg:px-20 py-4">
         <main className="min-h-screen  flex flex-col justify-center items-center lg:items-start gap-4" id="skills">
            <div className="w-full mb-2 lg:mb-4 flex flex-col gap-3 items-center lg:flex-row">
-          <p className="text-xl font-medium">04 | SKILLS</p>
+          <p className="text-base lg:text-xl font-medium">04 | SKILLS</p>
                     <div className="w-full lg:flex-1 h-[1px] bg-fg"></div>
           </div>
-          <div className="flex text-center lg:text-start flex-col items-center lg:items-start">
-            <h1 className="text-4xl lg:text-5xl mb-1 font-bold tracking-wide">What I Work withh!</h1>
-            <p className="text-base lg:text-xl italic font-light mb-10 lg:mb-15">// hover on icon to fill colors and click it to know more!</p>
-            <motion.div className="flex gap-4 items-center lg:gap-10 flex-wrap justify-center mb-10 lg:mb-25"
+          <div className="flex text-center  lg:text-start flex-col items-center ">
+            <h1 className="text-3xl lg:text-5xl mb-2 font-bold tracking-wide w-full">What I Work withh!</h1>
+            <p className="text-sm lg:text-xl italic font-light mb-10 lg:mb-20 w-full">// hover on icon to fill colors and click it to know more!</p>
+            <motion.div className="flex gap-4 items-center lg:gap-10 flex-wrap justify-center mb-10 lg:mb-15 lg:w-[75%]"
             variants={containerVariants}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
             >
             {skills.map((skill) => (
-                <motion.div key={skill.name} className="bg-bg2 hover:bg-bg hover:-translate-2 hover:text-[var(--skill-color)] transition-all duration-250 border-1 p-4 lg:p-6 rounded-2xl" style={{ '--skill-color': skill.color }} onClick={() => setSelected(skill)} variants={itemVariants}><button className="text-5xl md:text-6xl lg:text-8xl"><i className={`${skill.icon}`} style={{ '--skill-color': skill.color }} ></i></button> </motion.div>
+                <motion.div key={skill.name} className={`bg-bg2 hover:bg-bg hover:-translate-1 hover:text-[var(--skill-color)] ${selected.name === skill.name ? "text-[var(--selected-color)]" : "text-fg" } transition-all duration-250 border-1 p-4 lg:p-6 rounded-2xl`} style={{ '--skill-color': skill.color, '--selected-color': selected.color }} onClick={() => setSelected(skill)} variants={itemVariants}><button className="text-4xl md:text-6xl lg:text-8xl"><i className={`${skill.icon}`} > </i></button> </motion.div>
             ))}
             </motion.div>
             <div className="flex justify-center">
@@ -130,7 +130,7 @@ function Skills() {
             className="px-6 px-2 lg:w-[75%]" >
             <div className="text-center">
                 <h1 className="text-3xl lg:text-4xl mb-4 text-pyellow font-semibold">{selected.name}</h1>
-                <p className=" text-xl lg:text-2xl leading-8 lg:leading-9" >{selected.des}</p>
+                <p className=" text-lg lg:text-2xl leading-8 lg:leading-9" >{selected.des}</p>
             </div>
             </motion.div>
             </AnimatePresence>

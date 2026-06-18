@@ -58,7 +58,7 @@ function Navbar() {
             className="bg-bg rounded-xl p-8 w-[80%] max-w-sm"
             onClick={(e) => e.stopPropagation()}
           >
-            <div className="flex flex-col items-center gap-6 text-xl">
+            <div className="flex flex-col items-center gap-6 text-lg">
               {[
                 "About",
                 "Education",
