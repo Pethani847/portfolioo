@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+@theme {
+    --color-bg: #16130E;
+    --color-fg: #E4DFD8;
+    --color-pyellow: #FFD22E;
+    --color-pgreen: #11DE6F;
+    --color-pred: #FF1818;
+    --color-pblue: #1AA3FF;
+    --color-bg2: #1F1D17;
+    --color-bg3: #23211B;
+    --color-porange: #F59E0B;
+}
+
+body {
+  font-family: "Playpen Sans", cursive;
+}
+
+section {
+  overflow: hidden;
+}
