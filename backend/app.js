@@ -31,6 +31,13 @@ app.post("/contact", async (req, res) => {
   try {
     const { name, email, remark } = req.body;
 
+    if (!name || !email || !remark) {
+      return res.status(400).json({
+        success: false,
+        message: "Please fill out all fields.",
+      });
+    }
+
     const newContact = new Contact({
       name,
       email,
