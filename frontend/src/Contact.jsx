@@ -110,6 +110,7 @@ function Contact() {
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                   className="text-sm border-1 mb-2 rounded-2xl p-2"
+                  required
                 ></input>
                 <input
                   type="email"
@@ -117,12 +118,14 @@ function Contact() {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   className="text-sm border-1 mb-2 rounded-2xl p-2"
+                  required
                 ></input>
                 <textarea
                   placeholder="Message or any feedback for me?"
                   value={remark}
                   onChange={(e) => setRemark(e.target.value)}
                   className="text-sm border-1 rounded-2xl mb-4 p-2 lg:p-2"
+                  required
                 ></textarea>
                 <div className="flex justify-center lg:justify-start text-base items-center lg:text-xl text-pyellow">
                   <button className="bg-bg2 w-40 rounded-xl py-1 lg:w-50 border-1 lg:rounded-2xl hover:bg-pyellow hover:text-black transition-all duration-300 hover:font-semibold">
