@@ -124,7 +124,7 @@ function Contact() {
                   className="text-sm border-1 peer user-invalid:border-red-500 rounded-2xl p-2"
                   required
                 ></input>
-                <p className="text-sm lg:text-base hidden peer-user-invalid:block text-red-600 ml-2"> ❌ please enter your name!</p>
+                <p className="text-sm lg:text-base hidden peer-user-invalid:block text-red-600 ml-2"> ❌ please share your email!</p>
                 </div>
                 <div className="flex flex-col mb-4">
                 <textarea
@@ -134,7 +134,7 @@ function Contact() {
                   className="text-sm border-1 rounded-2xl peer user-invalid:border-red-500 p-2 lg:p-2"
                   required
                 ></textarea>
-                <p className="text-sm lg:text-base hidden peer-user-invalid:block text-red-600 ml-2 "> ❌ please enter your name!</p>
+                <p className="text-sm lg:text-base hidden peer-user-invalid:block text-red-600 ml-2 "> ❌ please give atleast one remark!</p>
                 </div>
                 <div className="flex justify-center lg:justify-start text-base items-center lg:text-xl text-pyellow">
                   <button className="bg-bg2 w-40 rounded-xl py-1 lg:w-50 border-1 lg:rounded-2xl hover:bg-pyellow hover:text-black transition-all duration-300 hover:font-semibold">
