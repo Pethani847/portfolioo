@@ -103,17 +103,17 @@ function Contact() {
               <h2 className="text-xl lg:text-4xl mb-4 lg:mb-6 font-semibold">
                 Mark your <span className="text-pyellow">Attendance here!</span>
               </h2>
-              <form className="flex flex-col w-[75%]" onSubmit={handleSubmit}>
+              <form noValidate className="flex flex-col w-[75%]" onSubmit={handleSubmit}>
                 <div className="flex flex-col mb-2">
                 <input
                   type="text"
                   placeholder="Your Name"
                   value={name}
                   onChange={(e) => setName(e.target.value)}
-                  className="peer text-sm border-1  rounded-2xl p-2 invalid:border-red-500"
+                  className="peer text-sm border-1  rounded-2xl p-2 user-invalid:border-red-500"
                   required
                 ></input>
-                <p className="text-sm lg:text-base hidden peer-invalid:block text-red-600 ml-2"> ❌ please enter your name!</p>
+                <p className="text-sm lg:text-base hidden peer-user-invalid:block text-red-600 ml-2"> ❌ please enter your name!</p>
                 </div>
                 <div className="flex flex-col mb-2">
                 <input
@@ -121,20 +121,20 @@ function Contact() {
                   placeholder="Your Email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className="text-sm border-1 peer invalid:border-red-500 rounded-2xl p-2"
+                  className="text-sm border-1 peer user-invalid:border-red-500 rounded-2xl p-2"
                   required
                 ></input>
-                <p className="text-sm lg:text-base hidden peer-invalid:block text-red-600 ml-2"> ❌ please enter your name!</p>
+                <p className="text-sm lg:text-base hidden peer-user-invalid:block text-red-600 ml-2"> ❌ please enter your name!</p>
                 </div>
                 <div className="flex flex-col mb-4">
                 <textarea
                   placeholder="Message or any feedback for me?"
                   value={remark}
                   onChange={(e) => setRemark(e.target.value)}
-                  className="text-sm border-1 rounded-2xl peer invalid:border-red-500 p-2 lg:p-2"
+                  className="text-sm border-1 rounded-2xl peer user-invalid:border-red-500 p-2 lg:p-2"
                   required
                 ></textarea>
-                <p className="text-sm lg:text-base hidden peer-invalid:block text-red-600 ml-2 "> ❌ please enter your name!</p>
+                <p className="text-sm lg:text-base hidden peer-user-invalid:block text-red-600 ml-2 "> ❌ please enter your name!</p>
                 </div>
                 <div className="flex justify-center lg:justify-start text-base items-center lg:text-xl text-pyellow">
                   <button className="bg-bg2 w-40 rounded-xl py-1 lg:w-50 border-1 lg:rounded-2xl hover:bg-pyellow hover:text-black transition-all duration-300 hover:font-semibold">
