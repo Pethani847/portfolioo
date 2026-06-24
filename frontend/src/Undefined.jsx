@@ -1,5 +1,9 @@
 import React from "react";
 import { motion } from "framer-motion";
+import Comments from "./components/Comments";
+import Scroll from "./components/Scroll";
+import Labels from "./Labels";
+import Definations from "./Definations";
 
 function Undefined() {
   let labels = [
@@ -68,43 +72,25 @@ function Undefined() {
               everything learning new things always evolving, always open for
               next chapter!.
             </motion.p>
-            <motion.p
-              className="text-sm lg:text-xl italic font-light mb-6 lg:mb-8"
-              variants={itemVariants}
-            >
-              // this belief shapes my path!
-            </motion.p>
+            <motion.div variants={itemVariants} className="mb-6 lg:mb-8">
+                 <Comments comment={"this belief shapes my path!"} />
+            </motion.div>
             <motion.div
               className="flex flex-wrap items-center justify-center gap-2 lg:gap-5 mb-6 lg:mb-10"
               variants={itemVariants}
             >
-              {labels.map((label) => (
-                <div
-                  key={label}
-                  className="bg-bg2 hover:text-pyellow transition-all duration-150 hover:-translate-1 border-1 rounded-xl text-sm lg:text-xl px-2 py-1 lg:px-4 lg:py-2 "
-                >
-                  {label}
-                </div>
-              ))}
+              <Labels />
             </motion.div>
             <motion.div
               className="flex justify-center flex-wrap gap-8 mb-8 lg:mb-6"
               variants={itemVariants}
             >
-              {definations.map((def) => (
-                <div
-                  key={def.name}
-                  className="flex flex-col items-center gap-3"
-                >
-                  <i className={`${def.icon} text-sm lg:text-base`}></i>
-                  <span className="text-sm lg:text-base">{def.name}</span>
-                </div>
-              ))}
+              <Definations />
+            </motion.div>
+            <motion.div variants={itemVariants}>
+              <Scroll />
             </motion.div>
           </motion.div>
-          <p className="text-sm lg:text-xl italic font-light ">
-            -------Scrolll!
-          </p>
         </main>
       </section>
     </>

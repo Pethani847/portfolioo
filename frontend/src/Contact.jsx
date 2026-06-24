@@ -1,45 +1,48 @@
 import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
+import ContactForm from "./ContactForm";
+import Title from "./components/Title";
+import Comments from "./components/Comments";
 
 function Contact() {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [remark, setRemark] = useState("");
-  const [message, setMessage] = useState("");
+  // const [name, setName] = useState("");
+  // const [email, setEmail] = useState("");
+  // const [remark, setRemark] = useState("");
+  // const [message, setMessage] = useState("");
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
 
-    const data = {
-      name,
-      email,
-      remark,
-    };
+  //   const data = {
+  //     name,
+  //     email,
+  //     remark,
+  //   };
 
-    try {
-      const res = await fetch(
-        "https://portfolio-backend-fx66.onrender.com/contact",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(data),
-        },
-      );
+  //   try {
+  //     const res = await fetch(
+  //       "https://portfolio-backend-fx66.onrender.com/contact",
+  //       {
+  //         method: "POST",
+  //         headers: {
+  //           "Content-Type": "application/json",
+  //         },
+  //         body: JSON.stringify(data),
+  //       },
+  //     );
 
-      const result = await res.json();
-      if (result.success) {
-        setMessage("✅ Message sent successfully!");
-        setName("");
-        setEmail("");
-        setRemark("");
-      }
-    } catch (err) {
-      console.log(err);
-    }
-  };
+  //     const result = await res.json();
+  //     if (result.success) {
+  //       setMessage("✅ Message sent successfully!");
+  //       setName("");
+  //       setEmail("");
+  //       setRemark("");
+  //     }
+  //   } catch (err) {
+  //     console.log(err);
+  //   }
+  // };
 
   return (
     <>
@@ -49,8 +52,7 @@ function Contact() {
           id="contact"
         >
           <div className="w-full  mb-1 lg:mb-4 flex flex-col gap-3 items-center lg:flex-row">
-            <p className="text-base lg:text-xl font-medium">07 | CONTACT</p>
-            <div className="w-full lg:flex-1 h-[1px] bg-fg"></div>
+            <Title num="07" title="CONTACT" />
           </div>
           <div className="flex flex-col justify-center  items-center lg:flex-row my-2 lg:my-4 w-full">
             <motion.div
@@ -89,9 +91,7 @@ function Contact() {
                   <i className="fa-solid fa-phone"></i>
                 </div>
               </div>
-              <p className="text-center lg:text-start text-sm lg:text-xl italic font-light">
-                // for some reasons, I just share email id, you can mail me!
-              </p>
+              <Comments comment="for some reasons, I just share email id, you can mail me!" />
             </motion.div>
             <motion.div
               className="flex flex-col items-center w-full"
@@ -100,7 +100,7 @@ function Contact() {
               transition={{ duration: 0.5 }}
               viewport={{ once: false, amount: 0.2 }}
             >
-              <h2 className="text-xl lg:text-4xl mb-4 lg:mb-6 font-semibold">
+              {/* <h2 className="text-xl lg:text-4xl mb-4 lg:mb-6 font-semibold">
                 Mark your <span className="text-pyellow">Attendance here!</span>
               </h2>
               <form noValidate className="flex flex-col w-[75%]" onSubmit={handleSubmit}>
@@ -143,7 +143,8 @@ function Contact() {
                   </button>
                 </div>
               </form>
-              {message && <p className="text-pgreen mt-2">{message}</p>}
+              {message && <p className="text-pgreen mt-2">{message}</p>} */}
+              <ContactForm />
             </motion.div>
           </div>
         </main>

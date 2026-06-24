@@ -1,6 +1,8 @@
 import React from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import heroImage from "./assets/hero-image.png";
+import Comments from "./components/Comments";
+import Scroll from "./components/Scroll";
 
 function Hero() {
   return (
@@ -13,7 +15,9 @@ function Hero() {
           viewport={{once: false}}
         >
           <div className="flex items-center lg:items-start text-center lg:text-start flex-col w-full">
-            <p className="text-sm lg:text-xl mb-2 lg:mb-6 italic font-light">// hallow, world! </p>
+            <div className="mb-2 lg:mb-6">
+            <Comments comment="hallow, world!" />
+            </div>
             <h1 className="text-5xl lg:text-8xl font-bold tracking-wide text-pyellow">
               MADHVI
             </h1>
@@ -34,11 +38,9 @@ function Hero() {
               <a href="#skills" className="bg-bg2 w-50 rounded-2xl py-2 lg:w-70 border-2 lg:py-3 text-center lg:rounded-3xl hover:bg-pyellow transition-all duration-300 hover:text-black hover:font-bold "><i className="mr-2 text-xl lg:text-2xl fa-solid fa-eye"></i> View Skills</a>
               <a href="/CV-madhvi-pethani.pdf" download="CV-madhvi-pethani.pdf" className="bg-bg2 w-60 rounded-2xl py-2 lg:w-80 border-2 lg:py-3 lg:rounded-3xl text-center hover:bg-pyellow transition-all duration-300 hover:text-black hover:font-bold"><i className="mr-2 text-xl lg:text-2xl fa-solid fa-cloud-arrow-down"></i>Download CV</a>
             </div>
-            <p className="text-sm lg:text-xl italic font-light">
-              -------Scrolll!
-            </p>
+           <Scroll />
           </div>
-          <div className="w-full flex justify-center">
+          <div className="w-full mb-5 lg:mb-10 flex justify-center">
             <img src={heroImage} className="w-80 lg:w-140" alt="coding-girl" />
           </div>
         </motion.main>
