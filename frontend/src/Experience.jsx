@@ -21,7 +21,7 @@ function Experience() {
             <Title num="06" title="EXPERIENCE" />
           </div>
           <div className="flex flex-col text-center justify-center items-center lg:items-start w-full">
-            <div className="mb-4 text-start lg:mb-10">
+            <div className="mb-4 text-center lg:text-start lg:mb-10">
             <Heading heading="Where I've worked." />
             <Comments comment="real world experience before the code world!" />
             </div>
