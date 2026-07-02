@@ -6,7 +6,7 @@ function Infocard() {
     return ( 
         <>
         {infos.map((info, index) => (
-                <motion.div className="flex flex-row gap-4 items-center group border-1 border-solid p-2 lg:py-2 lg:px-4 rounded-2xl lg:w-[75%]" key={info.title}
+                <motion.div className="flex flex-row gap-4 items-center group border border-solid p-2 lg:py-2 lg:px-4 rounded-2xl lg:w-[75%]" key={info.title}
                  initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeInOut", delay: index * 0.25 } }}
                   whileHover={{scale: 1.01, transition: {duration: 0.2}}}

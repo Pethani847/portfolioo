@@ -6,7 +6,7 @@ function Pro3() {
     return ( 
         <>
         <motion.div
-              className="bg-bg2 group border-pyellow border-1 border-solid rounded-4xl p-4 lg:p-5 flex flex-col justify-center w-full"
+              className="bg-bg2 group border-pyellow border border-solid rounded-4xl p-4 lg:p-5 flex flex-col justify-center w-full"
               initial={{
                 opacity: 0,
                 y: 60,
@@ -28,7 +28,7 @@ function Pro3() {
             >
               <div className="flex justify-between font-light  mb-2 lg:mb-3">
                 <div className="text-sm lg:text-xl">{pro3.num}</div>
-                <div className="text-pblue border-1 border-solid text-xs lg:text-base rounded-xl p-1">
+                <div className="text-pblue border border-solid text-xs lg:text-base rounded-xl p-1">
                   {pro3.status}
                 </div>
               </div>
@@ -42,7 +42,7 @@ function Pro3() {
                 {pro3.details.map((detail) => (
                   <div
                     key={detail.title}
-                    className="text-center border-pblue bg-bg3 p-1 lg:p-3 rounded-2xl border-1 w-full transition-all duration-300 hover:-translate-2"
+                    className="text-center border-pblue bg-bg3 p-1 lg:p-3 rounded-2xl border w-full transition-all duration-300 hover:-translate-2"
                   >
                     <div className="text-lg lg:text-2xl mb-2">
                       <i className={detail.icon}></i>

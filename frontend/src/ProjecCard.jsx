@@ -7,7 +7,7 @@ function ProjectCard() {
         <>
         {projects.map((project, index) => (
                 <motion.div
-                  className="border-pyellow bg-bg2 flex flex-col justify-center w-full p-4 lg:p-5 border-1 border-solid rounded-4xl"
+                  className="border-pyellow bg-bg2 flex flex-col justify-center w-full p-4 lg:p-5 border border-solid rounded-4xl"
                   key={project.num}
                   initial={{
                     opacity: 0,
@@ -31,7 +31,7 @@ function ProjectCard() {
                   <div className="flex justify-between font-light mb-2 lg:mb-3">
                     <div className="text-sm lg:text-xl">{project.num}</div>
                     <div
-                      className={`${project.color} border-1 text-xs lg:text-base border-solid rounded-xl p-1`}
+                      className={`${project.color} border text-xs lg:text-base border-solid rounded-xl p-1`}
                     >
                       {project.status}
                     </div>

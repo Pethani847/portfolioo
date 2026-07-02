@@ -8,7 +8,7 @@ function ExperienceCard() {
         {experiences.map((experience, index) => (
                 <motion.div
                   key={experience.role}
-                  className="flex flex-col border-pyellow border-1 px-4 py-6 lg:px-6 lg:py-8 rounded-4xl"
+                  className="flex flex-col border-pyellow border px-4 py-6 lg:px-6 lg:py-8 rounded-4xl"
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeInOut", delay: index * 0.25 } }}
                   whileHover={{scale: 1.01, transition: {duration: 0.2}}}

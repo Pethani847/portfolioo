@@ -22,7 +22,7 @@ function IconSkill({skill, onSelect, isSelected }) {
         <>
                 <motion.div 
                         
-                        className={`bg-bg2 hover:bg-bg hover:-translate-1 hover:text-[var(--skill-color)] ${isSelected ? "text-[var(--selected-color)]" : "text-fg" } transition-all duration-250 border-1 p-4 lg:p-6 rounded-2xl`} 
+                        className={`bg-bg2 hover:bg-bg hover:-translate-1 hover:text-(--skill-color) ${isSelected ? "text-(--selected-color)" : "text-fg" } transition-all duration-250 border p-4 lg:p-6 rounded-2xl`} 
                         style={{ '--skill-color': skill.color, '--selected-color': skill.color }} 
                         onClick={() => onSelect(skill)} variants={itemVariants}
                         >
