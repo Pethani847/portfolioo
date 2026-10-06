@@ -3,7 +3,7 @@ let labels = [
     "Quick Learner",
     "Strong Communication",
     "MERN Stack",
-    "Cybersecurity Next",
+    // "Cybersecurity Next",
   ];
 
  export default labels; 
