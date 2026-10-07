@@ -17,8 +17,8 @@ function Education() {
           </div>
               <div className='flex flex-col items-center text-center lg:text-start lg:items-start w-full'>
                 <div className='mb-10 lg:mb-15'>
-                 <Heading heading="What I learned & What's next." />
-                <Comments comment="academic background & upcoming plan" />
+                 <Heading heading="What I learned!" />
+                <Comments comment="academic background" />
                 </div>
                 <div className='flex flex-col mb-8 lg:mb-15 gap-8 lg:w-[75%]'>
                 <Educard />
